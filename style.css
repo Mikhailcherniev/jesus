@@ -1,0 +1,78 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    border:0px ;
+}
+
+:root{
+--cinza:#808080;
+--verde:#00FF00;
+--vermelho:#780404;
+--amarelo:#FFFF00;
+}
+
+body{
+background-image: linear-gradient(to right,   #6f5656, #8765);
+display: flex;
+justify-content: center;
+
+}
+
+.confeito{
+    background-image:url(https://assets.revistacultivar.com.br/c561d-Aproveitamento-Potencia.JPG) ;
+    display: flex;
+    justify-content: space-around;
+   border: 5px solid rgba(0, 0, 0, 0.474);
+    border-radius: 7px;
+    text-align: center;
+    padding: 30px 40px;
+    margin: 0 40px;
+    width: 400px;
+    height: 430px;
+    flex-direction: column;
+  
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+button{
+    border-radius: 123px;
+    justify-content: center;
+    background-color:rgb(164, 69, 2);
+    font-size: 20px;
+    color: aliceblue;
+
+}
+
+input{
+    border-radius: 123px;
+}
+
+.vasco{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 90vh;
+    padding: 10px;
+}
+
+#mensagemAcesso{
+    color: #d8d8d8;
+}
+
+.roger{
+    font-size: 25px;
+}
+
+label{
+    color: #000000;
+    background-color: #808080;
+    border-radius: 1234567px;
+    
+}
+
+
+
+

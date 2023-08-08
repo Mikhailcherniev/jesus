@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Controle de Acesso</title>
+</head>
+<body>
+
+<h1>Controle de Acesso</h1>
+
+<label for="numeroCartao">Número do Cartão de Identificação:</label>
+<input type="number" id="numeroCartao" placeholder="Digite o número do cartão">
+<button onclick="verificarAcesso()">Verificar Acesso</button>
+
+<p id="mensagemAcesso"></p>
+
+<script>
+    
+    function verificarAcesso() {
+        var numeroCartaoInput = document.getElementById("numeroCartao");
+        var mensagemAcesso = document.getElementById("mensagemAcesso");
+        
+        var numeroCartao = parseInt(numeroCartaoInput.value);
+        
+        if (!isNaN(numeroCartao)) {
+            if (numeroCartao >= 1000 && numeroCartao <= 1999) {
+                mensagemAcesso.textContent = "Acesso total concedido a todas as áreas restritas.";
+            } else if (numeroCartao >= 2000 && numeroCartao <= 2999) {
+                mensagemAcesso.textContent = "Acesso limitado a algumas áreas restritas.";
+            } else if (numeroCartao > 3000) {
+                mensagemAcesso.textContent = "Acesso negado. Funcionário não tem permissão para acessar áreas restritas.";
+            } else {
+                mensagemAcesso.textContent = "Número de cartão inválido.";
+            }
+        } else {
+            mensagemAcesso.textContent = "Por favor, insira um número de cartão válido.";
+        }
+    }
+</script>
